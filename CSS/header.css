@@ -1,0 +1,113 @@
+@import url("./root.css");
+
+html {
+	background-color: var(--off-white-background);
+}
+
+
+/* Temporary */
+* {
+	border: solid red 1px;
+}
+
+body {
+	height: 100svh;
+
+}
+
+.hidden {
+	display: none !important;
+}
+/*  */
+
+
+	#header-section {
+		display: flex;
+		
+		justify-content: center;
+		position: fixed;
+		width: 100%;
+	}
+
+		#header-section > nav {
+			align-items: center;
+			border-radius: 10px;
+			display: flex;
+			font-family: HaasGroteskDisplay;
+			font-weight: 55;
+			font-size: 15px;
+			justify-content: space-between;
+			margin-top: 40px;
+			margin-right: 10vw;
+			margin-left: 10vw;
+			min-width: 550px;
+			max-width: 850px;
+			overflow: hidden;
+			padding: 10px 30px;
+			position: relative;
+			text-transform: uppercase;
+			width: 850px;
+			
+		}
+
+			#header-section > nav > div {
+				position: relative;
+				bottom: -40px;
+			}
+
+			#about {
+				animation: 
+				/* animation-duration 	*/	1.25s 	
+				/* animation-easing		*/	cubic-bezier(0.71, 0, 0, 1) 
+				/* animation-delay 		*/	1s 
+				/* animation-direction	*/	forwards 
+				/* animtion-name		*/	onload-navigation;
+			}
+			#work {
+				animation: 
+				/* animation-duration 	*/	1.25s 	
+				/* animation-easing		*/	cubic-bezier(0.71, 0, 0, 1) 
+				/* animation-delay 		*/	1.08s 
+				/* animation-direction	*/	forwards 
+				/* animtion-name		*/	onload-navigation;
+			}
+			#studios {
+				animation: 
+				/* animation-duration 	*/	1.25s 	
+				/* animation-easing		*/	cubic-bezier(0.71, 0, 0, 1) 
+				/* animation-delay 		*/	1.16s 
+				/* animation-direction	*/	forwards 
+				/* animtion-name		*/	onload-navigation;
+			}
+			#careers {
+				animation: 
+				/* animation-duration 	*/	1.25s 	
+				/* animation-easing		*/	cubic-bezier(0.71, 0, 0, 1) 
+				/* animation-delay 		*/	1.24s 
+				/* animation-direction	*/	forwards 
+				/* animtion-name		*/	onload-navigation;
+			}
+			#news {
+				animation: 
+				/* animation-duration 	*/	1.25s 	
+				/* animation-easing		*/	cubic-bezier(0.71, 0, 0, 1) 
+				/* animation-delay 		*/	1.32s 
+				/* animation-direction	*/	forwards 
+				/* animtion-name		*/	onload-navigation;
+			}
+			#contact {
+				animation: 
+				/* animation-duration 	*/	1.25s 	
+				/* animation-easing		*/	cubic-bezier(0.71, 0, 0, 1) 
+				/* animation-delay 		*/	1.40s 
+				/* animation-direction	*/	forwards 
+				/* animtion-name		*/	onload-navigation;
+			}
+
+
+@keyframes onload-navigation {
+
+	100% {
+		bottom: 0px;
+	}
+}

@@ -1,0 +1,14 @@
+:root {
+	--off-white-background: #FFFFFA;
+}
+
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 55;
+	src: url('../Resources/Fonts/HaasGrotDisp55Roman.otf');
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
