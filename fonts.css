@@ -1,35 +1,177 @@
+/* Fonts - Normal Style */
 @font-face {
 	font-family: HaasGroteskDisplay;
 	font-weight: 25;
+	font-style: normal;
 	src: url('./Resources/Fonts/HaasGrotDisp25XThin.otf');
 }
 
 @font-face {
 	font-family: HaasGroteskDisplay;
 	font-weight: 35;
+	font-style: normal;
 	src: url('./Resources/Fonts/HaasGrotDisp35Thin.otf');
 }
 
 @font-face {
 	font-family: HaasGroteskDisplay;
 	font-weight: 45;
+	font-style: normal;
 	src: url('./Resources/Fonts/HaasGrotDisp45Light.otf');
 }
 
 @font-face {
 	font-family: HaasGroteskDisplay;
 	font-weight: 55;
+	font-style: normal;
 	src: url('./Resources/Fonts/HaasGrotDisp55Roman.otf');
 }
 
 @font-face {
 	font-family: HaasGroteskDisplay;
 	font-weight: 65;
+	font-style: normal;
 	src: url('./Resources/Fonts/HaasGrotDisp65Medium.otf');
 }
 
 @font-face {
 	font-family: HaasGroteskDisplay;
 	font-weight: 75;
+	font-style: normal;
 	src: url('./Resources/Fonts/HaasGrotDisp75Bold.otf');
 }
+
+
+/*  Fonts - Italic Style */
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 25;
+	font-style: italic;
+	src: url('./Resources/Fonts/HaasGrotDisp25XThinItalic.otf');
+}
+
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 35;
+	font-style: italic;
+	src: url('./Resources/Fonts/HaasGrotDisp35ThinItalic.otf');
+}
+
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 45;
+	font-style: italic;
+	src: url('./Resources/Fonts/HaasGrotDisp45LightItalic.otf');
+}
+
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 55;
+	font-style: italic;
+	src: url('./Resources/Fonts/HaasGrotDisp55Italic.otf');
+}
+
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 65;
+	font-style: italic;
+	src: url('./Resources/Fonts/HaasGrotDisp65MediumItalic.otf');
+}
+
+@font-face {
+	font-family: HaasGroteskDisplay;
+	font-weight: 75;
+	font-style: italic;
+	src: url('./Resources/Fonts/HaasGrotDisp75BoldItalic.otf');
+}
+
+
+
+
+/* Font Weights */
+.thin {
+	font-family: HaasGroteskDisplay;
+	font-weight: 35;
+}
+
+.light {
+	font-family: HaasGroteskDisplay;
+	font-weight: 45;
+}
+
+.roman {
+	font-family: HaasGroteskDisplay;
+	font-weight: 55;
+}
+
+.medium {
+	font-family: HaasGroteskDisplay;
+	font-weight: 65;
+}
+
+.bold {
+	font-family: HaasGroteskDisplay;
+	font-weight: 75;
+}
+
+
+
+	/* Bold */
+	f75- {
+		font-weight: 75;
+	}
+
+
+
+/* Font Sizes */
+.fw-20-single {
+	font-size: 1.042vw;
+	line-height: 1.042vw;
+}
+
+.fw-20-double {
+	font-size: 1.042vw;
+	line-height: calc(1.042vw * 2);
+}
+
+.fw-50-single {
+	font-size: 2.604vw;
+	line-height: 2.604vw;
+}
+
+.fw-75-single {
+	font-size: 3.906vw;
+	line-height: 3.906vw;
+}
+
+.fw-170-single {
+	font-size: 8.85vw;
+	line-height: 8.85vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* Special Case */
+	/* Italic Style */
+	i {
+		font-style: italic;
+	}
+
+
+
+
+
+
+
+
+
+	p {
+		margin: 0;
+	}

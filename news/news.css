@@ -1,0 +1,57 @@
+@import url('../fonts.css');
+@import url('../article-presets.css');
+
+:root {
+	--outline-color: #292929;
+	--date-time-color: #6E6E6E;
+}
+
+svg#reference {
+	position: absolute;
+	top: 0;
+	z-index: -10;
+	display: none;
+}
+
+* {
+	border: solid red 1px;
+}
+
+html {
+	background-color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+		
+
+		section#body > article#featured {
+			color: white;
+			display: flex;
+			gap: 3vw;
+			margin-top: 4vw;
+			margin-bottom: 24vw;
+		}
+
+			article#featured img {
+				height: 22.5vw;
+				border-radius: 2.5vw;
+			}
+
+				article#featured > article#info > h1 {
+					color: var(--date-time-color);
+					margin-top: 1vw;
+					margin-bottom: 1vw;
+					text-transform: uppercase;
+				}
+
+
+
+	hr {
+		margin: 2.5vw 0;
+	}

@@ -1,0 +1,93 @@
+	@import url('./fonts.css');
+
+
+	:root {
+		/* Sizes */
+		--article-image-height: 16vw;
+
+		/* Colors */
+		--article-info-color: #6E6E6E;
+	}
+
+	/* Article Author Information  */
+	.article-info-author-font {
+		font-family: HaasGroteskDisplay;
+		font-weight: 55;
+		font-size: 1.042vw;
+		line-height: calc(1.042vw * 2); /* Double Spaced */
+		color: var(--article-info-color);
+		text-transform: uppercase;
+	}
+
+	/* Article Date */
+	.article-info-date-font {
+		font-family: HaasGroteskDisplay;
+		font-weight: 75;
+		font-size: 1.042vw;
+		color: var(--article-info-color);
+		text-transform: uppercase;
+	}
+
+
+
+
+
+
+	/* Article Structural Presets */
+
+	.article {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+	}
+
+		.article-info {
+			display: flex;
+			justify-content: space-between;
+		}
+
+			.article-info-image {
+				height: var(--article-image-height);
+				border: solid var(--article-info-color);
+				border-radius: 0.8vw;
+			}
+
+			.article-info-wrapper {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				max-width: 39vw;
+				width: 39vw;
+			}
+
+				h1.article-info-header {
+					display: block;
+					margin-bottom: 2vw;
+				}
+
+				h1.article-info-author {
+					padding-left: 5vw;
+					position: relative;
+				}
+
+					img.article-info-author-image {
+						border-radius: 100vw;
+						height: 4vw;
+						left: 0;
+						position: absolute;
+						top: 0;
+					}
+
+				h1.article-info-date {
+					margin-top: 2vw;
+					position: relative;
+				}
+
+					div.article-info-social-logo {
+						display: flex;
+						height: 1.2vw;
+						width: 6vw;
+						justify-content: space-between;
+						position: absolute;
+						right: 0;
+						top: 0;
+					}

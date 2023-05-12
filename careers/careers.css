@@ -1,0 +1,131 @@
+@import url('../fonts.css');
+
+
+:root {
+	--outline-color: #292929;
+}
+svg#reference {
+	position: absolute;
+	top: 0;
+	z-index: -10;
+	/* display: none; */
+}
+
+* {
+	/* border: solid red 1px; */
+}
+
+html {
+	background-color: black;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+		h6, h4, h3 { color: white; }
+
+		section#body > h6 {
+			margin-bottom: 8vw;
+		}
+
+		section#body > h4 {
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+
+		section#body > p {
+			color: white;
+			line-height: calc(1.042vw * 2);
+			margin: 0 10vw;
+		}
+
+		section#body > ul {
+			color: white;
+			list-style-type: square;
+			margin-left: 10vw;
+			margin-right: 10vw;
+			margin-top: 2vw;
+		}
+
+		section#body > hr {
+			margin: 4vw 10vw;
+		}
+
+		section#body > form {
+			margin-left: 10vw;
+			margin-right: 10vw;
+			margin-top: 8.5vw;
+		}
+
+			article#form-data {
+				margin-top: 2vw;
+				margin-bottom: 1.5vw;
+			}
+
+			.input-field-1 {
+				background: transparent;
+				box-sizing: border-box;
+				border: none;
+				border-bottom: solid #333333 1px;
+				color:white;
+				display: block;
+				margin-top: 0.75vw;
+				margin-bottom: 0.75vw;
+				outline: none;
+				padding-bottom: 0.1vw;
+				width: 100%;
+			}
+		
+			input.input-field-1::placeholder, textarea::placeholder {
+				color: #333333;
+				font-weight: 65;
+			}
+
+			textarea {
+				border: solid #333333 1px;
+				border-radius: 0.4vw;
+				box-sizing: border-box;
+				background: transparent;
+				color: white;
+				height: 7vw;
+				min-width: 100%;
+				max-width: 100%;
+				min-height: 3vw;
+				outline: none;
+				padding: 0.5vw;
+				width: 100%;
+			}
+		
+
+		
+
+				div#submit {
+					border: solid white 1px;
+					border-radius: 0.3vw;
+					display: block;
+					height: 1.5vw;
+					margin-left: auto;
+					position: relative;
+					width: 8vw;
+				}
+
+					div#submit input {
+						background: transparent;
+						border: none;
+						color: white;
+						text-transform: uppercase;
+						text-align: left;
+						position: absolute;
+						padding-top: 0.3vw;
+						width: 100%;
+					}
+
+					div#submit input:hover {
+						cursor: pointer;
+					}

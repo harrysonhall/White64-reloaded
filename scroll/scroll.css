@@ -1,0 +1,180 @@
+:root {
+	/* Sizes */
+	--scroll-focus-width: 1.5px;
+	--scroll-viewport-size: 50vw;
+	--crosshair-box-size: calc(var(--scroll-viewport-size) * 0.1);
+
+	/* Colors */
+	--scroll-focus-color: #1e1e1e;
+	--off-white: #fffffa;
+}
+
+* {
+	border: solid red 1px;
+}
+
+html {
+	background-color: black;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+
+	section#scroll {
+		height: 80dvh;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		overflow: hidden;
+		transition: top 1s;
+	}
+
+		div#viewport {
+			align-items: center;
+			background-color: black;
+			display: flex;
+			height: var(--scroll-viewport-size);
+			justify-content: center;
+			position: relative;
+			width: var(--scroll-viewport-size);
+			z-index: 1;
+			transition: all 700ms cubic-bezier(0, 0.99, 0.58, 1);
+		}
+
+
+		/* Axes */
+			div#l-v, div#r-v {
+				background-color: var(--scroll-focus-color);
+				height: 100vh;
+				position: absolute;
+				width: var(--scroll-focus-width);
+			}
+
+				div#l-v { left: 0 }
+				div#r-v { right: 0 }
+
+			div#t-h, div#b-h {
+				background-color: var(--scroll-focus-color);
+				width: 100vw;
+				position: absolute;
+				height: var(--scroll-focus-width);
+			}
+				div#t-h { top: 0 }
+				div#b-h { bottom: 0 }
+
+
+		/* Focus Ring */
+			/* Vertical */
+			div#tl-v, div#tr-v, div#bl-v, div#br-v {
+				background-color: var(--off-white);
+				height: calc(var(--scroll-viewport-size) * 0.25);
+				position: absolute;
+				width: var(--scroll-focus-width);
+			}
+				div#tl-v { top: 0;	left: 0; }
+				div#tr-v { top: 0;	right: 0; }
+				div#bl-v { bottom: 0;	left: 0; }
+				div#br-v { bottom: 0;	right: 0; }
+
+
+			/* Horizontal */
+			div#tl-h, div#tr-h, div#bl-h, div#br-h {
+				background-color: var(--off-white);
+				height: var(--scroll-focus-width);
+				position: absolute;
+				width: calc(var(--scroll-viewport-size) * 0.25);
+			}
+				div#tl-h { top: 0;	left: 0; }
+				div#tr-h { top: 0;	right: 0; }
+				div#bl-h { bottom: 0;	left: 0; }
+				div#br-h { bottom: 0;	right: 0; }
+
+
+		/* Crosshair */
+			div#crosshair-box {
+				background-color: var(--off-white);
+				clip-path: polygon(0 47.5%, 47.5% 47.5%, 47.5% 0, 52.5% 0, 52.5% 47.5%, 100% 47.5%, 100% 52.5%, 52.5% 52.5%, 52.5% 100%, 47.5% 100%, 47.5% 52.5%, 0 52.5%);
+				height: var(--crosshair-box-size);
+				width: var(--crosshair-box-size);
+			}
+			/* div#crosshair-box {
+				align-items: center;
+				display: flex;
+				height: var(--crosshair-box-size);
+				justify-content: center;
+				position: relative;
+				width: var(--crosshair-box-size);
+			} */
+
+			/* .crosshair-v {
+				background-color: var(--off-white);
+				height: 100%;
+				position: absolute;
+				width: var(--scroll-focus-width);
+			}
+
+			.crosshair-h {
+				background-color: var(--off-white);
+				height: var(--scroll-focus-width);
+				position: absolute;
+				width: 100%;
+			}
+			 */
+
+
+
+
+			 section#scroll-container {
+				align-items: center;
+				color: white;
+				display: flex;
+				height: var(--scroll-viewport-size);
+				overflow-x: auto;
+				position: absolute;
+				scroll-snap-type: x mandatory;
+				width: var(--scroll-viewport-size);
+				z-index: 2;
+			
+			 }
+
+			 section#scroll-container2 {
+				align-items: center;
+				color: white;
+				display: flex;
+				height: var(--scroll-viewport-size);
+				position: absolute;
+				scroll-snap-type: x mandatory;
+				width: var(--scroll-viewport-size);
+			 }
+/* 
+			 ::-webkit-scrollbar {
+				display: none;
+			 } */
+
+			 #wrapper {
+				position: absolute;
+				display: flex;
+			 }
+
+
+			 	.scroll-item {
+					min-height: calc(var(--scroll-viewport-size) * 0.5);
+					margin-left: 10vw;
+					margin-right: 10vw;
+					min-width: calc(var(--scroll-viewport-size) * 0.5);
+					scroll-snap-align: center;
+					border: solid red 1px;
+				}
+
+
+
+				#header {
+					height: 300svh;
+				}

@@ -1,0 +1,40 @@
+@import url('./fonts.css');
+
+
+/* All Headers will be uppercase */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+
+
+/* Header Presets */
+
+	/* Header Outlines with Bold Font */
+	.header-outline-75-bold {
+		font-family: HaasGroteskDisplay;
+		font-weight: 75;
+		border: solid white 1px;
+		border-radius: 0.8vw;
+		display: inline-block;
+		font-size: 3.906vw;
+		line-height: 3.906vw;
+		padding: 0.7vw 0.6vw 0.3vw 0.7vw;
+	}
+
+	.header-outline-170-bold {
+		font-family: HaasGroteskDisplay;
+		font-weight: 75;
+		border: solid white 0.25vw;
+		border-radius: 1.5vw;
+		display: inline-block;
+		font-size: 8.85vw;
+		line-height: 5.85vw;
+		padding: 1.8vw 1vw 1vw 1vw;
+	}
+
+
+
+
+	/* Header No Outlines with Bold Font */
